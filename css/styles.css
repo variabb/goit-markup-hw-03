@@ -164,20 +164,21 @@ button {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
+
+.order-service button:hover,
+.order-service button:focus {
+  background-color: #404bbf;
+}
 .button-container {
   padding-bottom: 188px;
 }
 
-.order-service button:hover,
-.order-service button:focus {
-  background: #404bbf;
-}
 
 /* ------------------advantages------------------------- */
 
