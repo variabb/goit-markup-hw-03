@@ -11,11 +11,63 @@ ul {
 a {
   text-decoration: none;
 }
-/* button:hover {
-  cursor: pointer;
-} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-/* логотип */
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+/* -----------------навігація---------------------------- */
+/* logo*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
 .logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -24,6 +76,9 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-link {
   color: #2e2f42;
@@ -35,10 +90,13 @@ a {
   text-transform: uppercase;
 }
 
-/* навігація */
+
 .menu-link {
   color: #2e2f42;
   font-weight: 500;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   /* line-height: 1.5; 
   letter-spacing: 0.02em; */
 }
@@ -47,16 +105,19 @@ a {
   color: #404bbf;
 }
 
-address {
-  font-style: normal;
-}
 .address {
+  display: flex;
+  font-style: normal;
+
+  gap: 40px;
   font-weight: 400;
-  /* line-height: 1.5; 
-  letter-spacing: 0.02em; */
   color: #434455;
 }
+
 .address-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #434455;
 }
 .address-link:hover,
@@ -64,11 +125,17 @@ address {
   color: #404bbf;
 }
 
-/* замовлення */
+/* --------------order-service --------------------------*/
 .order-service {
   background: #2e2f42;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.order-service h1 {
+.order-service-title {
+  width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 188px;
+  margin-bottom: 48px;
   color: #fff;
   text-align: center;
   font-size: 56px;
@@ -77,8 +144,16 @@ address {
   line-height: 1.07;
   /* letter-spacing: 0.02em; */
 }
+
 .order-service-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 32px;
   background: #4d5ae5;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   font-family: inherit;
   color: #fff;
   font-weight: 500;
@@ -86,25 +161,38 @@ address {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
+.button-container {
+  padding-bottom: 188px;
+}
 
 .order-service button:hover,
 .order-service button:focus {
   background: #404bbf;
 }
 
-/* advantages */
+/* ------------------advantages------------------------- */
+
 .advantages-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 .advantages-paragraph {
   font-weight: 400;
   /* letter-spacing: 0.02em; */
 }
-/* our-team */
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-item {
+  width: 264px;
+  width: calc((100%-72px) / 4);
+}
+/* --------------------our-team -----------------------*/
 .our-team {
   background-color: #f4f4fd;
 }
@@ -116,15 +204,21 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 .our-team-item {
   background: #fff;
+  /* width: calc((100% - 72px) / 4); */
 }
-/* .our-team li:hover,
-.our-team li:focus {
-  
-} */
 
+.our-team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.our-team-item-container{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .our-team-item-title {
   color: #2e2f42;
   text-align: center;
@@ -132,6 +226,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .our-team-item-p {
   font-size: 16px;
@@ -141,15 +236,32 @@ address {
   /* letter-spacing: 0.02em; */
 }
 
-/* our-portfolio */
-.our-portfolio-title{
-    color: #2E2F42;
-text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11; 
-letter-spacing: 0.02em;
-text-transform: capitalize;
+/* ----------------our-portfolio ----------------------------*/
+.our-portfolio-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  padding-bottom: 72px;
+}
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.our-portfolio-item:not(:nth-child(n + 4)) {
+  margin-bottom: 48px;
+}
+.our-portfolio-item-text-cotainer{
+  padding: 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 .our-portfolio-item-title {
   color: #2e2f42;
@@ -157,16 +269,24 @@ text-transform: capitalize;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  
 }
 .our-portfolio-item-p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+ 
 }
 
-/* footer */
+/* --------------------footer ----------------------------*/
 .footer {
   background-color: #2e2f42;
+}
+.logo-f {
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 .logo-footer {
   color: #f4f4fd;
@@ -183,4 +303,6 @@ text-transform: capitalize;
   line-height: 1.17;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 16px;
 }
