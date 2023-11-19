@@ -218,15 +218,15 @@ button {
 }
 .our-team-item {
   background: #fff;
-  margin-right: 24px;
+ 
   border-radius: 0px 0px 4px 4px;
-  /* width: calc((100% - 72px) / 4); */
+  width: calc((100% - 72px) / 4);
 }
-.our-team-item-m {
-  margin-right: 0;
-}
+
 .our-team-list {
   display: flex;
+  gap: 24px
+
 }
 .our-team-item-container {
   padding-top: 32px;
