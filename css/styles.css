@@ -50,7 +50,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-button{
+button {
   cursor: pointer;
 }
 .section {
@@ -146,21 +146,18 @@ button{
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  letter-spacing: 1.12px;
   line-height: 1.07;
   /* letter-spacing: 0.02em; */
 }
 
-.order-service-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.order-service-button-span {
   font-family: inherit;
   color: #fff;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
- 
 }
-.button{
+.button {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -169,9 +166,10 @@ button{
   height: 56px;
   background: #4d5ae5;
   border: none;
-  border-radius: 4px; 
+  border-radius: 4px;
   cursor: pointer;
 }
+
 .button-container {
   padding-bottom: 188px;
 }
@@ -219,14 +217,15 @@ button{
 }
 .our-team-item {
   background: #fff;
-  
-  border-radius: 0px 0px 4px 4px; 
+  margin-right: 24px;
+  border-radius: 0px 0px 4px 4px;
   /* width: calc((100% - 72px) / 4); */
 }
-
+.our-team-item-m {
+  margin-right: 0;
+}
 .our-team-list {
   display: flex;
-  gap: 24px;
 }
 .our-team-item-container {
   padding-top: 32px;
@@ -293,12 +292,11 @@ button{
 /* --------------------footer ----------------------------*/
 .footer {
   background-color: #2e2f42;
-   padding: 100px 0;
+  padding: 100px 0;
 }
 .logo-f {
-   display: inline-block; 
+  display: inline-block;
   margin-bottom: 16px;
-  
 }
 .logo-footer {
   color: #f4f4fd;
@@ -316,5 +314,4 @@ button{
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  
 }
